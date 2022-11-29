@@ -1,0 +1,45 @@
+body{ 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column ; 
+    margin: 0 auto;
+} 
+
+header{ 
+         background-color: rgb(23, 189, 255);
+         padding: 2rem; width:60rem; 
+         position:relative; 
+         left: 21.3rem;
+        }
+
+main{ 
+    display: flex; 
+    flex: 1; 
+    text-align: center;
+}
+
+nav{ 
+    background-color: rgb(245, 247, 249); 
+    flex-direction: row; 
+    flex: 1; 
+    position: relative; 
+    bottom: 5rem;
+} 
+
+article{ 
+    background-color: rgb(148, 79, 198); 
+    flex: 3;
+}
+
+aside{ 
+    background-color: aqua; 
+    flex: 1;
+} 
+
+footer{ 
+    background-color: rgb(5, 79, 92); 
+    padding: 2rem; 
+    width:60rem; 
+    position:relative; 
+    left: 21.3rem;
+}
