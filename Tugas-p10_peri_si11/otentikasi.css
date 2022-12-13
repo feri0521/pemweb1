@@ -1,0 +1,79 @@
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+background-color: #f2d5f8;
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid rgb(129, 7, 7);
+margin-bottom: 40px;
+}
+div.container{
+width: 900px;
+height: 610px;
+margin:35px auto;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+width: 300px;
+padding: 10px 50px 25px;
+border: 2px solid rgb(158, 13, 102);
+border-radius: 10px;
+font-family: raleway;
+float:left;
+margin-top:50px;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid rgb(188, 72, 171);
+color: #0f030f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #0a2ac9;
+text-shadow: 0 1px 0 rgb(232, 223, 223);
+font-size: 14px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+.note{
+color:rgb(13, 70, 201);
+}
+.valid{
+color:green;
+}
+.back{
+text-decoration: none;
+border: 1px solid rgb(0, 143, 255);
+background-color: rgb(12, 188, 223);
+padding: 3px 20px;
+border-radius: 2px;
+color: black;
+}
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#f9fbd1 5%, #b1afa7 100%);
+border: 1px solid #fc96c7;
+color: #010101;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#d676c1 5%, #ea97ec 100%);
+}

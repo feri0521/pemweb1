@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function conversi() {
+            var matauang = document.getElementById("matauang").value;
+            var nilai = document.getElementById("nilai").value;
+            if (matauang == "us") {
+                let jumlah = nilai;
+                let dolar = 1 / 9915;
+                let total = jumlah * dolar;
+                console.log(total);
+                let hasil = document.getElementById("hasil");
+                hasil.innerHTML = "$" + total;
+            } else if (matauang == "singapore") {
+                let jumlah = nilai;
+                let dolar = 1 / 13472;
+                let total = jumlah * dolar;
+                console.log(total);
+                let hasil = document.getElementById("hasil");
+                hasil.innerHTML = "$" + total;
+            } else if (matauang == "malaysia") {
+                let jumlah = nilai;
+                let ringgit = 1 / 874;
+                let total = jumlah * ringgit;
+                console.log(total);
+                let hasil = document.getElementById("hasil");
+                hasil.innerHTML = total;
+            } else if (matauang == "jepang") {
+                let jumlah = nilai;
+                let yen = 1 / 120;
+                let total = jumlah * yen;
+                console.log(total);
+                let hasil = document.getElementById("hasil");
+                hasil.innerHTML = "" + total;
+            } else if (matauang == "euro") {
+                let jumlah = nilai;
+                let euro = 1 / 15888;
+                let total = nilai * euro;
+                console.log(total);
+                let hasil = document.getElementById("hasil");
+                hasil.innerHTML = "" + total;
+            } else {
+                let jumlah = nilai;
+                let riyal = 1 / 3592;
+                let total = nilai * riyal;
+                console.log(total);
+                let hasil = document.getElementById("hasil");
+                hasil.innerHTML = "" + total;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>Masukkan Nilai</td>
+            <td>Valas</td>
+            <td>Nilai Rupiah</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="nilai" value=""></td>
+            <td>
+                <select id="matauang" onchange="conversi()">
+                    <option value="us">Dollar US</option>
+                    <option value="singapore">Dollar Singapore</option>
+                    <option value="malaysia">Ringgit Malaysia</option>
+                    <option value="jepang">Yen Jepang</option>
+                    <option value="euro">Euro</option>
+                    <option value="arab">Riyal Arab Saudi</option>
+                </select>
+            </td>
+            <td id="hasil"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
